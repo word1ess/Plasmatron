@@ -1,0 +1,353 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <div class="header__row">
+            <a data-scroll="intro" href="index.html" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <a href="tel:+7 (812) 951-00-52" class="header__phone">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <p>+7 (812) 951-00-52</p>
+                </a>
+                <button class="header__btn btn no-bg">Обратный звонок</button>
+            </div>
+        </div>
+    </div>
+</header>
+<svg display="none">
+    <symbol id="phone" viewBox="0 0 24 24">
+        <g>
+            <path id="Icon" d="M5.00029 9.86053C6.91669 14.0344 10.3267 17.3529 14.5662 19.1519L15.2458 19.4547C16.8006 20.1475 18.6284 19.6212 19.5767 18.2077L20.4648 16.884C20.7536 16.4536 20.6656 15.8739 20.2623 15.5485L17.2504 13.1187C16.8081 12.7618 16.1575 12.845 15.8191 13.3016L14.8874 14.5589C12.4966 13.3795 10.5555 11.4385 9.37619 9.04768L10.6334 8.11596C11.0901 7.77754 11.1732 7.12702 10.8163 6.68464L8.38647 3.6727C8.06112 3.26942 7.48162 3.18145 7.05125 3.47002L5.71841 4.36372C4.29607 5.31742 3.77269 7.16027 4.48142 8.71922L4.99951 9.85884L5.00029 9.86053Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="mail" viewBox="0 0 20 16">
+        <g>
+            <path d="M5.28924 0.907491C8.42388 0.635003 11.5763 0.635003 14.7109 0.907491L16.2211 1.03877C17.2265 1.12617 18.0876 1.72584 18.5337 2.58361C18.5908 2.69335 18.548 2.82621 18.4428 2.89132L12.1769 6.77024C10.833 7.60216 9.1385 7.61962 7.77778 6.81556L1.46995 3.0882C1.36804 3.02798 1.32126 2.90402 1.36719 2.79492C1.77535 1.82536 2.69298 1.13318 3.77901 1.03877L5.28924 0.907491Z"/>
+            <path d="M1.36206 4.76676C1.20609 4.6746 1.00709 4.77377 0.988912 4.95402C0.735176 7.46965 0.796587 10.0091 1.17314 12.5132C1.37166 13.8333 2.44907 14.8454 3.77901 14.961L5.28924 15.0923C8.42388 15.3647 11.5763 15.3647 14.7109 15.0923L16.2211 14.961C17.5511 14.8454 18.6285 13.8333 18.827 12.5132C19.2145 9.93613 19.2683 7.32162 18.9882 4.73415C18.9686 4.55264 18.7662 4.45529 18.611 4.55139L12.9664 8.04564C11.1482 9.17118 8.85566 9.19479 7.01468 8.10695L1.36206 4.76676Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="vk" viewBox="0 0 24 25">
+        <g id="basil:vk-solid">
+            <path id="Vector" d="M21.504 19.2695H19.222C18.359 19.2695 18.099 18.5705 16.552 17.0225C15.2 15.7195 14.629 15.5575 14.287 15.5575C13.814 15.5575 13.685 15.6875 13.685 16.3385V18.3905C13.685 18.9455 13.505 19.2705 12.055 19.2705C10.6483 19.176 9.28416 18.7487 8.07497 18.0237C6.86578 17.2987 5.84612 16.2968 5.1 15.1005C3.32839 12.8955 2.09571 10.3076 1.5 7.54252C1.5 7.20052 1.63 6.89052 2.282 6.89052H4.562C5.148 6.89052 5.359 7.15152 5.589 7.75452C6.696 11.0125 8.585 13.8465 9.352 13.8465C9.646 13.8465 9.774 13.7165 9.774 12.9835V9.62752C9.677 8.09652 8.864 7.96752 8.864 7.41352C8.87428 7.26736 8.94114 7.13097 9.05037 7.03331C9.15961 6.93565 9.30261 6.88443 9.449 6.89052H13.033C13.523 6.89052 13.685 7.13452 13.685 7.72052V12.2505C13.685 12.7395 13.895 12.9015 14.043 12.9015C14.337 12.9015 14.563 12.7395 15.102 12.2015C16.2574 10.7925 17.2013 9.22268 17.904 7.54152C17.9759 7.33967 18.1119 7.16689 18.2912 7.04953C18.4705 6.93218 18.6832 6.87668 18.897 6.89152H21.178C21.862 6.89152 22.007 7.23352 21.862 7.72152C21.0324 9.57993 20.0058 11.344 18.8 12.9835C18.554 13.3585 18.456 13.5535 18.8 13.9935C19.026 14.3355 19.826 15.0035 20.363 15.6385C21.145 16.4185 21.794 17.3205 22.285 18.3085C22.481 18.9445 22.155 19.2695 21.504 19.2695Z"/>
+        </g>
+    </symbol>
+</svg>
+
+            <main class="content">
+                <article class="intro">
+                    <div class="container">
+                        <div class="intro__row">
+                            <div class="intro__info">
+                                <h1>
+                                    Выгодный прием кабеля из
+                                    <span>Москвы</span>
+                                    в
+                                    <span>Санкт-Петербург</span>
+                                </h1>
+                                <div class="intro__price">
+                                    <p>Принимаем медь от частных и оптовых клиентов по высокой цене</p>
+                                    <p class="price">
+                                        До
+                                        <span class="btn">20 000₽</span>
+                                        за тонну
+                                    </p>
+                                </div>
+                                <button class="btn btn-callback">Оставить заявку</button>
+                                <div class="intro__bottom">
+                                    <div class="intro__advantage">
+                                        <p>Множество</p>
+                                        <p>пунктов приема</p>
+                                    </div>
+                                    <div class="intro__advantage">
+                                        <p>Оборудование</p>
+                                        <p>для разделки кабеля</p>
+                                    </div>
+                                    <div class="intro__advantage">
+                                        <p>Различные</p>
+                                        <p>варианты оплаты</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="intro__img">
+                                <img src="img/intro/bg.png" alt="intro-bg">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="intro">
+                    <div class="container">
+                        <div class="intro__row intro__row__reverse">
+                            <div class="intro__info intro__info__short">
+                                <h2>
+                                    Принимаем кабель
+                                    <span>по высоким ценам</span>
+                                </h2>
+                                <p>Сдать медь быстро и дорого в Санкт-Петербурге? Эта задача выполнима, если вы обратитесь в компанию «Плазма». Мы работаем в удобном графике и располагаем сразу четырьмя пунктами приема в разных районах города. Также есть и услуга выездной приемки — компания имеет необходимый транспорт и все остальное, чтобы обеспечить точное взвешивание и все остальные процедуры с ломом меди на локации клиента.</p>
+                            </div>
+                            <div class="intro__img intro__img__short">
+                                <img src="img/sale/bg.png" alt="sale-bg">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="reviews article">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>
+                                Что о нас говорят
+                                <span>клиенты</span>
+                            </h2>
+                        </header>
+                        <main class="reviews__swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="reviews__review swiper-slide">
+                                    <div class="stars">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                    </div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                    <div class="reviews__author">
+                                        <img src="img/slider/1.png" alt="reveiws-author">
+                                        <div class="reviews__info">
+                                            <p>Иван Фролов</p>
+                                            <p>Компания</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__review swiper-slide">
+                                    <div class="stars">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                    </div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                    <div class="reviews__author">
+                                        <img src="img/slider/2.png" alt="reveiws-author">
+                                        <div class="reviews__info">
+                                            <p>Иван Фролов</p>
+                                            <p>Компания</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__review swiper-slide">
+                                    <div class="stars">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                    </div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                    <div class="reviews__author">
+                                        <img src="img/slider/3.png" alt="reveiws-author">
+                                        <div class="reviews__info">
+                                            <p>Иван Фролов</p>
+                                            <p>Компания</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews__review swiper-slide">
+                                    <div class="stars">
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                        <i>★</i>
+                                    </div>
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare."</p>
+                                    <div class="reviews__author">
+                                        <img src="img/slider/3.png" alt="reveiws-author">
+                                        <div class="reviews__info">
+                                            <p>Иван Фролов</p>
+                                            <p>Компания</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev reviews__prev"></div>
+                            <div class="swiper-button-next reviews__next"></div>
+                        </main>
+                    </div>
+                </section>
+                <section class="cabel article">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>
+                                <span>Кабель</span>
+                                в пункте приема
+                            </h2>
+                        </header>
+                        <main class="cabel__row">
+                            <div class="cabel__item cabel__item__big">
+                                <img src="img/cabel/1.png" alt="cabel-1">
+                            </div>
+                            <div class="cabel__item ">
+                                <img src="img/cabel/2.png" alt="cabel-2">
+                            </div>
+                            <div class="cabel__item">
+                                <img src="img/cabel/3.png" alt="cabel-3">
+                            </div>
+                            <div class="cabel__item ">
+                                <img src="img/cabel/1.png" alt="cabel-4">
+                            </div>
+                            <div class="cabel__item ">
+                                <img src="img/cabel/1.png" alt="cabel-5">
+                            </div>
+                        </main>
+                    </div>
+                </section>
+                <section class="section">
+                    <div class="container">
+                        <div class="block-header left">
+                            <h2>
+                                <span>Польза от вторичной</span>
+                                переработки металлов
+                            </h2>
+                        </div>
+                        <p>
+                            Сдать медь на переработку — не просто способ избавиться от ненужного лома металла. Это решение в духе времени, ведь переработка позволит использовать медь в производстве, а это значит, что нужно будет меньше добывать ее. Добыча любой руды — это огромные затраты и вред экологии. В мире говорят о том, что запасы меди на нашей планете не бесконечны, а по подсчетам некоторых организаций, они уже начали истощаться.
+                            <br>
+                            Между тем медь — металл, который используется повсеместно. Она участвует в изготовлении деталей для двигателей, является частью электронной платы, широко распространена в производстве изделий медицинского назначения. А вот найти медь для сдачи можно в широком спектре изделий — это и детали газовых колонок, и самые разные кабели, и старые телевизоры, холодильники и другая техника. Мы готовы принять такие разновидности лома меди. Как стружка, медь блеск, кабель и микс.
+                        </p>
+                    </div>
+                </section>
+                <section class="form section">
+                    <div class="container">
+                        <div class="block-header left">
+                            <h2>Оценка лома онлайн</h2>
+                            <p>Отправьте нам запрос на оценку лома и мы сами с вами свяжемся, предложив лучшие цены за кг по Санкт-Петербургу и области. Для более точной оценки, приложите фотографию металла или оборудования.</p>
+                        </div>
+                        <div class="form__row">
+                            <form action="#" class="form__form">
+                                <input type="text" name="name" placeholder="Имя">
+                                <input type="tel" name="phone" placeholder="Телефон">
+                                <input type="text" name="weight" placeholder="Вес">
+                                <textarea name="comment" placeholder="Напишите комментарий, если необходимо..."></textarea>
+                                <button type="submit" class="btn">Отправить запрос</button>
+                            </form>
+                            <div class="form__info">
+                                <a href="tel:+7 (812) 951-00-52" class="phone">
+                                    <svg>
+                                        <use xlink:href="#phone"></use>
+                                    </svg>
+                                    <p>+7 (812) 951-00-52</p>
+                                </a>
+                                <a href="mailto:info@plasmalom.ru" class="mail">
+                                    <svg>
+                                        <use xlink:href="#mail"></use>
+                                    </svg>
+                                    <p>info@plasmalom.ru</p>
+                                </a>
+                                <p>Получить актуальную информацию о ценах на лкабель можно всего за 2 минуты, связавшись с нами по телефону или электронной почте</p>
+                                <div class="form__map">
+                                    <img src="img/map.png" alt="map">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="img/svgicons/logo-white.svg" alt="logo-white">
+                </div>
+                <p class="white">
+                    ООО «Плазма»
+                    <br>
+                    ИНН 7816545643О
+                    <br>
+                    ГРН 1127847463590
+                    <br>
+                </p>
+                <a href="#">
+                    <svg>
+                        <use xlink:href="#vk"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__contacts">
+                <p class="white">Контакты:</p>
+                <a href="tel:+7 (812) 951-00-52" class="phone white">
+                    <svg>
+                        <use xlink:href="#phone"></use>
+                    </svg>
+                    <p>+7 (812) 951-00-52</p>
+                </a>
+                <a href="mailto:info@plasmalom.ru" class="mail white">
+                    <svg>
+                        <use xlink:href="#mail"></use>
+                    </svg>
+                    <p>info@plasmalom.ru</p>
+                </a>
+                <a href="#">
+                    <img src="img/svgicons/yoko.svg" alt="yoko">
+                </a>
+            </div>
+        </div>
+        <div class="footer__copy">
+            <p class="white">© 2024 Все права защищены</p>
+            <a href="#">Лицензия</a>
+        </div>
+    </div>
+</footer>
+
+            <div class="dialogbox dialogbox-callback">
+                <div class="dialogbox__inner">
+                    <div class="dialogbox__window">
+                        <div class="dialogbox__close"></div>
+                        <div class="dialogbox__form">
+                            <div class="block-header left">
+                                <h2>Оценка лома онлайн</h2>
+                                <p>Отправьте нам запрос на оценку лома и мы сами с вами свяжемся, предложив лучшие цены за кг по Санкт-Петербургу и области. Для более точной оценки, приложите фотографию металла или оборудования.</p>
+                            </div>
+                            <div class="form__row">
+                                <form action="#" class="form__form">
+                                    <input type="text" name="name" placeholder="Имя">
+                                    <input type="tel" name="phone" placeholder="Телефон">
+                                    <input type="text" name="weight" placeholder="Вес">
+                                    <textarea name="comment" placeholder="Напишите комментарий, если необходимо..."></textarea>
+                                    <button type="submit" class="btn">Отправить запрос</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
